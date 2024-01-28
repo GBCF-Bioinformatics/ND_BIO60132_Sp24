@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#$ -M sheri.anne.sanders@gmail.com
+#$ -M 
 #$ -m abe
 #$ -q debug
 #$ -N RunQC_A
