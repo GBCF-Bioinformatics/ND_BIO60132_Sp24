@@ -24,7 +24,7 @@ adapters.fa holds the adapters used for trimmomatic.  Please review to make sure
 Also, please feel free to adjust the trimmomatic settings to match any oddities in your initial fastqc reporting.
 
 D_RunRemoveSpike.sh:
-The spike sequences are in the file phix_adapters.fa.gz in the ../Reference directory.  Feel free to add other files here to remove any
+The spike sequences are in the file phix_adapters.fa.gz in the ./Reference directory.  Feel free to add other files here to remove any
 known contaminants, and simply replace the file name in this script to remove them.
 
 E_RunRemoveHost.sh:
