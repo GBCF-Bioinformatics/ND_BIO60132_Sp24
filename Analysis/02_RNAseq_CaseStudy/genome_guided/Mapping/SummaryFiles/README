@@ -1,0 +1,9 @@
+Summary files from mapping will appear here.
+
+A couple good summaries to grep!
+average "overall alignment rate":
+for f in *summary; do cat $f | grep "Overall" | awk '{print $NF}' | sed 's/[()%]//g' ; done | awk 'BEGIN{sum=0}{sum+=$1}END{print sum/NR}' | less
+
+average >1 mapping in summary files: 3.2504% (includes both paired and unpaired):
+for f in *summary; do cat $f | grep ">1" | awk '{print $NF}' | sed 's/[()%]//g' | awk 'BEGIN{sum=0}{sum+=$1}END{print sum}'; done | awk 'BEGIN{sum=0}{sum+=$1}END{print sum/NR}' | less 
+

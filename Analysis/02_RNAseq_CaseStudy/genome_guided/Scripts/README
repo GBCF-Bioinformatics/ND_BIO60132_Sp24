@@ -1,0 +1,11 @@
+TBD - expand this information
+
+Run order:
+./make_list.sh - generate listed samples in make_1 and make_2 files
+./make_1.listed.sh - prepped script to make step one job files (hisat2 and samtools)
+for f in *hisat*.job; do qsub $f; done
+wait to finish
+./make_2.listed.sh - prepped script to make step two job files (htseq)
+for f in *htseq*.job; do qsub $f; done
+wait to finish
+name and combine counts in Counts dir

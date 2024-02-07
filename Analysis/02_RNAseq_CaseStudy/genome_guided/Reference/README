@@ -1,0 +1,9 @@
+Please index your reference genome with the following command:
+
+hisat2-build -f $referencefile $name
+
+i.e. hisat2-build -f dpulex_scaf66.fa daphnia-genome
+
+Then, when referencing the genome reference, use just the path and $name:
+
+i.e. -ref ../Reference/daphnia-genome
