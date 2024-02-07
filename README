@@ -1,1 +1,3 @@
 If you would like example data, please run the script 'PullData.sh' in Setup/
+
+Additionally, if you are running this on a cluster, please remember to add your module load commands to the scripts.
