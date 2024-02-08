@@ -4,6 +4,7 @@ if [ ! $(command -v singularity) ]; then
 	module load singularity
 fi
 
+source ../../setup_files/path_set
 VERSION=1.04
 PACKAGE=soapdenovotrans
 TOOL=SOAPdenovo-Trans-127mer

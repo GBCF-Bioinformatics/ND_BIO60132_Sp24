@@ -4,6 +4,7 @@ if [ ! $(command -v singularity) ]; then
         module load singularity
 fi
 
+source ../../setup_files/path_set
 VERSION=3.2.1
 PACKAGE=trinotate
 TOOL=/usr/local/bin/Build_Trinotate_Boilerplate_SQLite_db.pl

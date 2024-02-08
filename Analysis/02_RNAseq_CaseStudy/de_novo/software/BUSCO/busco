@@ -4,6 +4,7 @@ if [ ! $(command -v singularity) ]; then
 	module load singularity
 fi
 
+source ../../setup_files/path_set
 VERSION=5.1.3
 PACKAGE=busco
 TOOL=busco
