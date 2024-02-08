@@ -1,4 +1,5 @@
-find . -type f -exec sed -i "s/#$ -N/#$ -N/g" {} \;
-find . -type f -exec sed -i "s/#$ -M /#$ -M /g" {} \;
-find . -type f -exec sed -i "s/#$ -m abe
-find . -type f -exec sed -i "s/#$ -q/#$ -q/g" {}  \;
+find . -type f -name *.sh -exec sed -i "s/#SBATCH -J/#$ -N/g" {} \;
+find . -type f -name *.sh -exec sed -i "s/#SBATCH --mail-user/#$ -M /g" {} \;
+find . -type f -name *.sh -exec sed -i "s/#SATCH --main-type=FAIL,BEGIN,END/#$ -m abe/g" {} \;
+find . -type f -name *.sh -exec sed -i "s/#SBATCH -p/#$ -q/g" {}  \;
+find . -type f -name *.sh -exec sed -i '/#SBATCH.*/d' {} \;
