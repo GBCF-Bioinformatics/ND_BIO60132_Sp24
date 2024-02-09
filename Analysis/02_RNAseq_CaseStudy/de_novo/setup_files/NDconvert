@@ -1,5 +1,5 @@
 find . -type f -name *.sh -exec sed -i "s/#SBATCH -J/#$ -N/g" {} \;
 find . -type f -name *.sh -exec sed -i "s/#SBATCH --mail-user/#$ -M /g" {} \;
-find . -type f -name *.sh -exec sed -i "s/#SATCH --main-type=FAIL,BEGIN,END/#$ -m abe/g" {} \;
+find . -type f -name *.sh -exec sed -i "s/#SATCH --mail-type=FAIL,BEGIN,END/#$ -m abe/g" {} \;
 find . -type f -name *.sh -exec sed -i "s/#SBATCH -p/#$ -q/g" {}  \;
 find . -type f -name *.sh -exec sed -i '/#SBATCH.*/d' {} \;
