@@ -17,4 +17,6 @@ you.
 - You have enough resources to run the assemblies (RAM and storage, which will depends on your data)
 - The system has singularity and SLURM if you are on a cluster, or you have root access if you are on a cloud/virtual machine  
 
-If you have a different job handler, you can still edit the scripts to work, and we can help - this is made to be flexible!
+If you have a different job handler, you can still edit the scripts to work, and we can help - this is made to be flexible!  To this end, there is a converter script
+Notre Dame's job scheduler in the setup_files folder.  Run bash ./setup_files/NDconvert, from de_novo/, to convert the SLURM headers to ND headers.  Do this AFTER you
+run Setup.ba to set up email, etc.
