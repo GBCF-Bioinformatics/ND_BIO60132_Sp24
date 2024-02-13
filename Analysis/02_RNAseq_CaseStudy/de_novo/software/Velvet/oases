@@ -4,7 +4,6 @@ if [ ! $(command -v singularity) ]; then
 	module load singularity
 fi
 
-source ../../setup_files/path_set
 VERSION=0.2.09
 PACKAGE=oases
 TOOL=oases

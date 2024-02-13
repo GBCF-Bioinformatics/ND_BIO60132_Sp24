@@ -4,7 +4,6 @@ if [ ! $(command -v singularity) ]; then
 	module load singularity
 fi
 
-source ../../setup_files/path_set
 VERSION=14dec30
 PACKAGE=evigene
 TOOL=/usr/local/evigene14dec30/scripts/prot/tr2aacds.pl
