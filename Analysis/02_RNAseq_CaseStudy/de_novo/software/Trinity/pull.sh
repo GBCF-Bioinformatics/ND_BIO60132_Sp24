@@ -1,4 +1,11 @@
 #!/bin/bash
 
-wget -nc https://data.broadinstitute.org/Trinity/TRINITY_SINGULARITY/trinityrnaseq.v2.11.0.simg
-mv -v trinityrnaseq.v2.11.0.simg singularity-Trinity-2.11.0.sif
+#!/bin/bash
+
+if [ ! $(command -v singularity) ]; then
+        module load singularity
+fi
+
+
+singularity pull docker://trinityrnaseq/trinityrnaseq:2.11.0
+mv -v *.sif singularity-Trinity-2.11.0.sif
